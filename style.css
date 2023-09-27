@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px 0 40px 0; 
+    color:black; 
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input input{
+    width: 300px;
+    padding: 8px 4px ;
+    border-radius: 4px;
+}
+.input button{
+    padding: 8px 4px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(209, 4, 72);
+}
+.input button:hover{
+    transition: 0.2s;
+    color:white;
+    background-color:black; 
+
+}
+#search{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.img{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(31, 29, 29, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+.img img{
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+}
+.img:hover{
+    opacity: 0.8;
+}
+.img a{
+    text-decoration: none;
+    font-size: 16px;
+    color:rgb(209, 4, 72);
+    display: block;
+    padding:15px;
+    background-color:rgb(218, 224, 230);
+    text-transform: capitalize;
+}
+#button{
+    padding: 8px 4px;
+    border-radius: 5px;
+    background-color:rgb(209, 4, 72);
+    font-size: 16px;
+    margin-left: 600px;
+    color: white;
+}
+#button:hover{
+    background-color:black;
+    color:white;
+}
+@media screen and (max-width:786px) {
+    .search{
+        width: 20px;
+    }
+    .img{
+        width:100%;
+    }
+    #button{
+        margin-left: 350px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .img{
+        width: 90%;
+    }  
+}
